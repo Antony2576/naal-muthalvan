@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Indian Cookbook</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fffdf5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #ffa726;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    /* Recipe Block Styles */
+    details.recipe {
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      color: white;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    details.recipe::before {
+      content: "";
+      position:absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* Overlay for readability */
+      z-index: 0;
+    }
+
+    details.recipe > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    summary {
+      font-size: 1.8rem;
+      font-weight: bold;
+      cursor: pointer;
+      padding: 1.5rem 1rem;
+      list-style: none;
+      color: white;
+    }
+
+    summary:hover {
+      text-decoration: underline;
+      color: #ffd54f;
+    }
+
+    details[open] summary {
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details ul, details ol {
+      margin: 1rem 0 1.5rem 1.5rem;
+    }
+
+    footer {
+      background-color: #ffe0b2;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Indian Cookbook</h1>
+    <p> Simple and Delicious Indian Recipes</p>
+  </header>
+
+  <main>
+    <details class="recipe" style="background-image: url('https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/paneer-butter-masala-recipe.jpg');">
+      <summary>lamb kebab</summary>
+      <ul>
+        <li><strong>Ingredients:</strong>
+          <ul>
+            <li>Paneer (cottage cheese)</li>
+            <li>Tomatoes</li>
+            <li>Butter</li>
+            <li>Fresh cream</li>
+            <li>Cashew nuts</li>
+            <li>Ginger-garlic paste</li>
+            <li>Garam masala</li>
+          </ul>
+        </li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li>Sauté onions in butter.</li>
+            <li>Add ginger-garlic paste and tomatoes.</li>
+            <li>Add spices and paneer, cook.</li>
+            <li>Stir in cream and serve hot.</li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+    <details class="recipe" style="background-image: url('https://media.istockphoto.com/id/1182758935/photo/homemade-indian-chickpea-chana-masala.jpg?s=612x612&w=0&k=20&c=t9hk82loyPEu37eFnA8v-oKGscX4_ektoiwUsXVsegs=');">
+      <summary>butter chicken</summary>
+      <ul>
+        <li><strong>Ingredients:</strong>
+          <ul>
+            <li>500g chicken (boneless)</li>
+            <li>2 tbsp butter</li>
+            <li>1 cup tomato puree</li>
+            <li>½ cup cream</li>
+            <li>1 tbsp ginger-garlic paste</li>
+            <li></li>1 tsp chili powder, garam masala, salt
+            <li>1 tsp chili powder, garam masala, salt</li>
+          </ul>
+        </li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li></li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+    <details class="recipe" style="background-image: url('https://media.istockphoto.com/id/1146288796/photo/delicious-indian-food-mumbai-style-rice-with-vegetables-close-up-on-a-plate-horizontal.jpg?s=612x612&w=0&k=20&c=mLB75zaY8_gAUiKEBou2BPRxfjqRsKct9NMyAWDPzp8=');">
+      <summary>chicken biryani</summary>
+      <ul>
+        <li><strong>Ingredients:</strong>
+          <ul>
+            <li>Rice</li>
+            <li>Mixed vegetables</li>
+            <li>Onion</li>
+            <li>Whole spices (cloves, bay leaf, etc.)</li>
+            <li>Cumin</li>
+            <li>Green chili</li>
+            <li>Oil/ghee, salt</li>
+          </ul>
+        </li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li>Sauté spices and onions.</li>
+            <li>Add veggies, rice, and water.</li>
+            <li>Cook until rice is fluffy.</li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+    <details class="recipe" style="background-image: url('https://media.istockphoto.com/id/1091565958/photo/spicy-potato-curry-indian-recipe.jpg?s=612x612&w=0&k=20&c=km419oVyfT731IrxaqSqUYGS5vgN1K1f1Xb32sw1Jms=');">
+      <summary>mutton rogan josh</summary>
+      <ul>
+        <li><strong>Ingredients:</strong>
+          <ul>
+            <li>Potatoes and cauliflower</li>
+            <li>Onions, tomatoes</li>
+            <li>Ginger-garlic paste</li>
+            <li>Spices: cumin, turmeric, chili powder</li>
+          </ul>
+        </li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li>Cook spices and onions.</li>
+            <li>Add veggies and simmer.</li>
+            <li>Cook until soft and well coated.</li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+    <details class="recipe" style="background-image: url('https://media.istockphoto.com/id/1130228942/photo/indian-dal-traditional-indian-soup-lentils-indian-dhal-spicy-curry-in-bowl-spices-herbs.jpg?s=612x612&w=0&k=20&c=ciPGZR4hkLeUL-nRxY4iAh539zYLgUkNz82GG_nJG5A=');">
+      <summary> fish curry</summary>
+      <ul>
+        <li><strong>Ingredients:</strong>
+          <ul>
+            <li>Red lentils</li>
+            <li>Onion, tomato, garlic</li>
+            <li>Cumin, turmeric, green chilies</li>
+          </ul>
+        </li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li>Boil lentils until soft.</li>
+            <li>Prepare tempering with onion, garlic, tomato.</li>
+            <li>Combine and simmer.</li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+    <details class="recipe" style="background-image: url('https://t4.ftcdn.net/jpg/04/84/16/15/360_F_484161575_DqXirPHQBwcG9ry9OKHTpxrydj0f5cLY.jpg');">
+      <summary>prawn masala</summary>
+      <ul>
+        <li><strong>Ingredients:</strong>
+          <ul>
+            <li>Toor dal</li>
+            <li>Mixed vegetables</li>
+            <li>Tamarind, sambar powder</li>
+            <li>Tempering spices</li>
+          </ul>
+        </li>
+        <li><strong>Steps:</strong>
+          <ol>
+            <li>Cook dal and vegetables.</li>
+            <li>Add tamarind, spices, and tempering.</li>
+            <li>Simmer and serve hot.</li>
+          </ol>
+        </li>
+      </ul>
+    </details>
+  <details class="recipe" style="background-image: url('https://www.ohmyveg.co.uk/wp-content/uploads/2021/02/Palak-Paneer-1-e1722864315381.jpg');">
+    <summary>chicken 65</summary>
+    <ul>
+      <li><strong>Ingredients:</strong>
+        <ul>
+          <li>Spinach (palak)</li>
+          <li>Paneer (cottage cheese)</li>
+          <li>Onion, tomato, garlic, ginger</li>
+          <li>Spices: cumin, garam masala, turmeric</li>
+        </ul>
+      </li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>Blanch and blend spinach to a puree.</li>
+          <li>Sauté onions, garlic, and tomato with spices.</li>
+          <li>Add spinach puree and paneer cubes.</li>
+          <li>Simmer and serve hot with roti or rice.</li>
+        </ol>
+      </li>
+    </ul>
+  </details>
+  <details class="recipe" style="background-image: url('https://www.cubesnjuliennes.com/wp-content/uploads/2018/07/Vegetable-Dum-Biryani-recipe.jpg');">
+    <summary>egg curry</summary>
+    <ul>
+      <li><strong>Ingredients:</strong>
+        <ul>
+          <li>Chicken or mutton</li>
+          <li>Basmati rice</li>
+          <li>Yogurt, fried onions, saffron</li>
+          <li>Whole spices: bay leaf, cardamom, cloves</li>
+        </ul>
+      </li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>Marinate meat in yogurt and spices.</li>
+          <li>Parboil rice with whole spices.</li>
+          <li>Layer rice and meat, add fried onions & saffron milk.</li>
+          <li>Cook on dum (sealed pot) for 30–40 minutes.</li>
+        </ol>
+      </li>
+    </ul>
+  </details>
+  <details class="recipe" style="background-image: url('https://www.indianhealthyrecipes.com/wp-content/uploads/2020/01/poha-500x500.jpg');">
+    <summary>grilled tandoori chicken</summary>
+    <ul>
+      <li><strong>Ingredients:</strong>
+        <ul>
+          <li>Flattened rice (poha)</li>
+          <li>Onion, mustard seeds, curry leaves</li>
+          <li>Green chilies, turmeric, peanuts</li>
+          <li>Lemon juice, coriander</li>
+        </ul>
+      </li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>Rinse poha and set aside.</li>
+          <li>Heat oil, add mustard seeds and curry leaves.</li>
+          <li>Sauté onions, then add turmeric and poha.</li>
+          <li>Mix well, top with peanuts and lemon juice.</li>
+        </ol>
+      </li>
+    </ul>
+  </details>
+  <details class="recipe" style="background-image: url('https://t4.ftcdn.net/jpg/10/41/99/53/360_F_1041995329_Y948A29Hru2TXn8JgkWMwJmIVauyQ9jq.jpg');">
+    <summary>crab masala</summary>
+    <ul>
+      <li><strong>Ingredients:</strong>
+        <ul>
+          <li>Besan (gram flour)</li>
+          <li>Yogurt, ginger-green chili paste</li>
+          <li>Fruit salt (Eno), mustard seeds</li>
+          <li>Curry leaves, sugar, lemon</li>
+        </ul>
+      </li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>Make a smooth batter with besan and yogurt.</li>
+          <li>Add Eno just before steaming.</li>
+          <li>Steam for 15–20 mins, cool, and cut into pieces.</li>
+          <li>Pour tempered mustard-curry leaf mix on top.</li>
+        </ol>
+      </li>
+    </ul>
+  </details>
+
+  <details class="recipe" style="background-image: url('https://www.indianveggiedelight.com/wp-content/uploads/2022/10/curd-rice.jpg');">
+    <summary>chicken shawarma</summary>
+    <ul>
+      <li><strong>Ingredients:</strong>
+        <ul>
+          <li>curd</li>
+          <li>milk</li>
+          <li>salt</li>
+          <li>boiled rice</li>
+          <li>green chilli</li>
+        </ul>
+      </li>
+      <li><strong>Steps:</strong>
+        <ol>
+          <li>add rice in bowl.</li>
+          <li>add curd,milk,pinch salt,green chilli.</li>
+          <li>mix it well.</li>
+          <li>if you want add some fruits.</li>
+        </ol>
+      </li>
+    </ul>
+  </details>
+</main>
+  <footer>
+    <p>&copy; 2025 My Indian Cookbook</p>
+  </footer>
+</body>
+</html>
