@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ffa726;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+details.recipe {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+details.recipe::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+details.recipe > * {
+  position: relative;
+  z-index: 1;
+}
+
+summary {
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1.5rem 1rem;
+  list-style: none;
+  color: white;
+}
+
+summary:hover {
+  text-decoration: underline;
+  color: #ffebee;
+}
+
+details[open] summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details ul,
+details ol {
+  margin: 1rem 0 1.5rem 1.5rem;
+}
+
+footer {
+  background-color: #fce4ec;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

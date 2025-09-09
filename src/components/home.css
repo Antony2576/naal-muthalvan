@@ -1,0 +1,130 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #ff9a8b, #ff6a88, #ff99ac);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero h1 img.one {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Featured Recipes */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-weight: 700;
+  color: #444;
+  font-size: 2rem;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #f08ca0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+a.ant {
+  text-decoration: none;
+  color: #ff6a88;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+a.ant:hover {
+  color: #ff3d68;
+}
+
+/* About & Contact */
+.text-center {
+  text-align: center;
+}
+
+.container p {
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin: auto;
+  color: #555;
+}
+
+/* Contact link */
+#contact a {
+  color: #ff6a88;
+  font-weight: 600;
+}
+#contact a:hover {
+  color: #ff3d68;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0;
+}
